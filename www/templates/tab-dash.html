@@ -1,6 +1,12 @@
 <ion-view view-title="Dashboard">
   <ion-content class="padding">
+    <h2>Ionic 1 Facebook integration </h2>
+
+    <button ng-if="!isLoggedIn" ng-click="facebookLogin()"> facebook login </button>
+    <button ng-if="isLoggedIn" ng-click="facebookLogOut()"> facebook logout</button>
     <p>
+Login data : {{ data | json }}
     </p>
+
   </ion-content>
 </ion-view>
